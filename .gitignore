@@ -1,0 +1,13 @@
+# Credentials & Secrets — niemals ins Repo
+docs/credentials/
+*.env
+.env.*
+
+# OS-Dateien
+.DS_Store
+Thumbs.db
+
+# Editors / Werkzeuge
+.vscode/
+.idea/
+*.swp
