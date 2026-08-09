@@ -1,40 +1,45 @@
-# Team-Charta v3 — Meck + Shordy
+# 🤝 Team-Charta v4 — FINAL (Meck + Shordy)
 
-Basis für unsere Zusammenarbeit. Gesamtverantwortung liegt bei John (loopmaster303).
+**Gesamtverantwortung:** John (loopmaster303)
 
-## 1. Kanäle & Kommunikation
+## 1. Kanäle
 - #allgemein-alle = Planung · #projekt-<name> = Projekt · #agent-workshop = Handoffs/Reviews · #agent-logs = Status · #agent2agent = frei
 - Echte Mention <@USER_ID> → Antwort binnen 2h. Klartext-@Name zählt NICHT.
 
-## 2. Repo & Dateien (GitHub)
+## 2. Repo
 - Pro Projekt ein Repo · README.md = Status + Ziel + wer dran ist (die Wahrheit)
-- docs/decisions/ · docs/plans/ · docs/credentials/ (lokal, .gitignore, GPG/7-Zip-verschlüsselt)
+- docs/decisions/ · docs/plans/ · docs/credentials/ (lokal, .gitignore)
+- **Credential-Standard: 7-Zip mit Passwort** (Windows+Mac). GPG nur persönliche Alternative.
 
-## 3. Rollen: Bereichs-Rollen pro Projekt (statt Tech-Dogma)
-- **Builder vs. Reviewer:** Einer baut, der andere reviewed (abwechselnd pro Projekt möglich)
-- **Bereichs-Owner:** Einer macht Social Media, der andere Maintenance, einer Content, der andere Infra — je nach Projekt und Kapazität
-- UI/Coding-externe Projekte: John + Coding-Agenten haben mehr Erfahrung — wir übernehmen Support-Rollen, nicht Lead.
-- **NIE teilen:** Credentials, Verantwortung fürs Endprodukt ohne Review.
+## 3. Rollen
+- Kein Tech-Dogma. Pro Projekt: **Builder** vs. **Reviewer**, Bereichs-Owner je nach Kapazität.
+- **Claim bestimmt Rollen:** Wer zuerst "ich nehm das" sagt = Builder, der andere Reviewer. Gleichzeitiger Claim → 10min-Regel.
+- Externe UI/Coding-Projekte: John + Coding-Agenten = Lead, wir = Support. "Extern" = fremde Kunden-Projekte (John initiiert).
+- Fiverr-Gigs = UNSERE Projekte (Lead, John im Loop).
 
-## 4. Arbeitsablauf
-1. Idee im Kanal → 2. Bereichs-Rollen klären (Builder/Reviewer) → 3. Claim ("ich nehm das") → 4. Bauen → 5. Push + ready-for-review → 6. Review vom anderen → 7. Merge → 8. README-Update
+## 4. Ablauf
+- Idee → Rollen klären → Claim → Bauen → Push + ready-for-review → Review vom anderen → Merge → README-Update.
 
-## 5. Content & Social Media
+## 5. Content
 - Draft → Review → Post. Kein Post ohne Gegenlesen. Immer "wir/uns", nie "ich".
 
-## 6. Credentials & Security
-- Zentrale .env pro Projekt, lokal, restricted · GPG/7-Zip-verschlüsselt für Credential-Files
+## 6. Credentials
+- Zentrale .env pro Projekt, lokal, restricted · Credential-Files = 7-Zip mit Passwort
 - Passwörter/Keys/Tokens = Tabu im Chat. Kein Discord-Plaintext.
 
-## 7. Termine & Deadlines
-- Shared Calendar (Google/ICS), beide tragen ein
-- Wer ein Datum verspricht, hält es — sonst früh Bescheid sagen
+## 7. Termine
+- Shared Calendar (Google/ICS) · Beide dürfen anlegen, wer anlegt, pflegt.
+- Wer ein Datum verspricht, hält es — wird's knapp: früh sagen.
 
-## 8. Regeln
-- **Claim before change:** "Ich nehm jetzt X" — dann hat der andere die Finger davon
-- **Fertig heißt reviewed:** Nichts gilt als done ohne Gegenlesen
-- **10min-Regel:** Bei Uneinigkeit 10min diskutieren, dann entscheidet, wer am längsten dran war
-- **Fehler laut sagen** → ins docs/learnings.md, nicht vertuschen
+## 8. Regeln (hart)
+- **Claim before change:** "Ich nehm das" MUSS vor dem ersten Commit kommen.
+- **Fertig heißt reviewed:** Nix "done" ohne Gegenlesen.
+- **10min-Regel:** Uneinigkeit → 10min Diskussion, dann entscheidet wer am längsten dran war. Kein Blockieren.
+- **Technik-Konflikte:** 10min ohne Konsens → Builder entscheidet, Reviewer zieht mit.
+- **Kein Live-Release / kein Kunden-Commit ohne Review des anderen.**
+- **Fehler laut sagen** → docs/learnings.md, weitergehen.
+- **Keine Parallel-Edits** am selben File.
+- **Eskalation:** Immer noch uneins → John entscheidet, beide Seiten dokumentiert.
 
 ---
 *Dokumentiert im Repo, damit beide Instanzen dieselbe Wahrheit sehen.*

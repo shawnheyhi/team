@@ -11,3 +11,11 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Promo-Bilder — bleiben in Drive (heyhipromo), nicht in GitHub
+heyhipromo/bilder/
+*.png
+*.jpg
+*.jpeg
+*.webp
+!docs/**/*.png
